@@ -28,7 +28,7 @@ export default function RankingBoard() {
   return (
     <div className="min-h-screen bg-canvas text-ink">
       <header className="sticky top-0 z-50 border-b border-line bg-white/85 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-board items-center justify-between px-4">
+        <div className="mx-auto flex h-16 max-w-board items-center justify-between px-4 lg:max-w-[1120px]">
           <div className="flex items-center gap-2">
             <img src="/logo.svg" alt="" className="h-8 w-8 rounded-lg" />
             <span className="font-headline text-lg font-bold tracking-tight text-primary">K-TechRank</span>
@@ -51,7 +51,7 @@ export default function RankingBoard() {
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-board flex-col gap-4 px-4 pb-8 pt-4">
+      <main className="mx-auto flex max-w-board flex-col gap-4 px-4 pb-8 pt-4 lg:max-w-[1120px]">
         <div>
           <p className="font-headline text-xl font-bold text-primary">{heading}</p>
           <p className="mt-1 text-[13px] leading-5 text-muted">
@@ -90,7 +90,7 @@ export default function RankingBoard() {
         ) : items.length === 0 ? (
           <p className="rounded-xl border border-line bg-white px-4 py-8 text-center text-sm text-muted">이 분야의 랭킹이 없습니다.</p>
         ) : (
-          <section className="flex flex-col gap-2" aria-label={heading}>
+          <section className="grid grid-cols-1 gap-3 lg:grid-cols-2" aria-label={heading}>
             {items.map((item) => (
               <RankingCard key={item.channelId} item={item} />
             ))}
@@ -98,7 +98,7 @@ export default function RankingBoard() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-board px-4 pb-10 text-center text-[12px] leading-5 text-muted">
+      <footer className="mx-auto max-w-board px-4 pb-10 text-center text-[12px] leading-5 text-muted lg:max-w-[1120px]">
         데이터 출처: YouTube Data API. 채널과 영상 원본은 YouTube에서 제공합니다.
         {' '}
         <a

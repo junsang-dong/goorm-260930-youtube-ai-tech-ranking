@@ -44,7 +44,7 @@ export default function RankingCard({ item }) {
   const initial = item.title?.replace(/^샘플\s*/, '').trim()?.[0] ?? '?';
 
   return (
-    <article className="relative overflow-hidden rounded-xl border border-line bg-white p-3.5 shadow-card">
+    <article className="relative flex h-full flex-col overflow-hidden rounded-xl border border-line bg-white p-3.5 shadow-card">
       <div className={`absolute bottom-0 left-0 top-0 w-1.5 ${podium?.bar ?? 'bg-line'}`} />
       <div className="flex items-center gap-3">
         <div className="flex w-8 shrink-0 flex-col items-center">
@@ -124,7 +124,7 @@ export default function RankingCard({ item }) {
         </ul>
       ) : null}
 
-      <div className="mt-3 flex items-center justify-between gap-3 rounded-lg bg-surface-low px-2.5 py-1.5">
+      <div className="mt-3 flex items-center justify-between gap-3 rounded-lg bg-surface-low px-2.5 py-1.5 lg:mt-auto lg:pt-3">
         <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[11px] tabular-nums text-muted">
           <span>구독자</span>
           <span className="font-semibold text-ink">{formatSubscribers(item.subscriberCount)}</span>
