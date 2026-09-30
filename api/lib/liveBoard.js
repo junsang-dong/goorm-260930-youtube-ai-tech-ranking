@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { categoryLabel, normalizeCategory } from '../../shared/categories.js';
 import { kstDate } from './dates.js';
-import { buzzScore, qualifyChannel } from './qualify.js';
+import { FEATURED_VIDEO_COUNT, buzzScore, qualifyChannel } from './qualify.js';
 import {
   channelRecord,
   listChannelByHandle,
@@ -89,7 +89,7 @@ async function collectBoard(apiKey) {
       live: true,
       prevRank: null,
       recentUploadCount: check.recentUploadCount,
-      videos: videos.slice(0, 3).map((video) => ({
+      videos: videos.slice(0, FEATURED_VIDEO_COUNT).map((video) => ({
         id: video.id,
         title: video.title,
         thumbnailUrl: video.thumbnailUrl,
@@ -155,7 +155,7 @@ export async function getLiveBoard({ apiKey, sub = 'all' }) {
     period: 'weekly',
     metric: 'buzz',
     sub: category,
-    note: '구독자 1,000명 이상, 최근 90일 업로드 3개 이상인 채널입니다. 점수는 최근 7일 영상의 조회수 + 좋아요×10입니다.',
+    note: '구독자 1,000명 이상인 채널입니다. 채널마다 최근 영상 5개를 보여 주고, 점수는 최근 7일 영상의 조회수 + 좋아요×10입니다.',
     items: filtered,
   };
 }

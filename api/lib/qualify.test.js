@@ -12,10 +12,11 @@ function video(daysAgo, viewCount, likeCount) {
   };
 }
 
-test('구독자 1,000명 미만이거나 90일 업로드가 3개 미만이면 제외한다', () => {
+test('구독자 1,000명 미만은 제외하고, 업로드가 적어도 1,000명 이상이면 포함한다', () => {
   const videos = [video(1, 10, 1), video(10, 10, 1), video(20, 10, 1)];
   assert.equal(qualifyChannel({ subscriberCount: 999, videos, now }).qualified, false);
-  assert.equal(qualifyChannel({ subscriberCount: 1000, videos: videos.slice(0, 2), now }).qualified, false);
+  assert.equal(qualifyChannel({ subscriberCount: 1000, videos: [], now }).qualified, true);
+  assert.equal(qualifyChannel({ subscriberCount: 1000, videos: videos.slice(0, 1), now }).qualified, true);
   assert.equal(qualifyChannel({ subscriberCount: null, videos, now }).qualified, false);
   assert.equal(qualifyChannel({ subscriberCount: 1000, videos, now }).qualified, true);
 });

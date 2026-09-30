@@ -1,7 +1,7 @@
 export const MIN_SUBSCRIBERS = 1000;
-export const MIN_RECENT_UPLOADS = 3;
 export const RECENT_DAYS = 90;
 export const BUZZ_DAYS = 7;
+export const FEATURED_VIDEO_COUNT = 5;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -22,11 +22,9 @@ export function qualifyChannel({ subscriberCount, videos, now = Date.now() }) {
   const subscribers = subscriberCount == null ? null : Number(subscriberCount);
   const subsOk = subscribers != null && subscribers >= MIN_SUBSCRIBERS;
   const recentUploadCount = videos.filter((video) => isWithinDays(video.publishedAt, now, RECENT_DAYS)).length;
-  const uploadsOk = recentUploadCount >= MIN_RECENT_UPLOADS;
   return {
     subsOk,
-    uploadsOk,
-    qualified: subsOk && uploadsOk,
+    qualified: subsOk,
     recentUploadCount,
   };
 }
