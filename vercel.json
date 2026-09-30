@@ -1,0 +1,17 @@
+{
+  "crons": [
+    { "path": "/api/cron/collect", "schedule": "0 21 * * *" },
+    { "path": "/api/cron/rank", "schedule": "30 21 * * *" }
+  ],
+  "functions": {
+    "api/admin/seed.js": {
+      "includeFiles": "seed/channels.json"
+    },
+    "api/board.js": {
+      "includeFiles": "seed/channels.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}

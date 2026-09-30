@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>K-TechRank</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed-dim": "#aac7ff", "surface-container-highest": "#d3e4fe", "on-surface": "#0b1c30", "secondary-container": "#7babff", "surface-container": "#e5eeff", "on-primary": "#ffffff", "tertiary": "#00263a", "on-secondary-container": "#003e81", "tertiary-container": "#003d5a", "surface": "#f8f9ff", "inverse-primary": "#adc8f5", "outline-variant": "#c4c6cf", "outline": "#74777f", "secondary-fixed": "#d7e3ff", "tertiary-fixed-dim": "#89ceff", "on-error": "#ffffff", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "background": "#f8f9ff", "on-secondary": "#ffffff", "surface-dim": "#cbdbf5", "on-tertiary-container": "#24acf1", "surface-container-low": "#eff4ff", "surface-tint": "#455f87", "primary-container": "#1e3a5f", "tertiary-fixed": "#c9e6ff", "inverse-surface": "#213145", "secondary": "#255dac", "surface-bright": "#f8f9ff", "on-tertiary-fixed-variant": "#004c6e", "on-primary-fixed": "#001c3b", "primary": "#022448", "surface-container-lowest": "#ffffff", "on-primary-container": "#8aa4cf", "on-secondary-fixed-variant": "#00458e", "on-surface-variant": "#43474e", "inverse-on-surface": "#eaf1ff", "primary-fixed-dim": "#adc8f5", "on-error-container": "#93000a", "primary-fixed": "#d5e3ff", "on-secondary-fixed": "#001b3e", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#2d486d", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "on-tertiary-fixed": "#001e2f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1rem", "gutter-sm": "0.75rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "0.75rem" }, fontFamily: { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-md": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-numeric": ["JetBrains Mono"], "body-sm": ["Inter"], "stat-display": ["JetBrains Mono"] }, fontSize: { "headline-xl-mobile": ["26px", { lineHeight: "34px", fontWeight: "800" }], "headline-lg-mobile": ["20px", { lineHeight: "28px", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", fontWeight: "700" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "700" }], "body-lg": ["15px", { lineHeight: "22px", fontWeight: "400" }], "body-md": ["13px", { lineHeight: "18px", fontWeight: "400" }], "title-md": ["15px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", fontWeight: "800" }], "label-numeric": ["11px", { lineHeight: "14px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "stat-display": ["22px", { lineHeight: "26px", fontWeight: "700" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; } * { -ms-overflow-style: none; scrollbar-width: none; }</style></head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="K-TechRank Modern Emblemic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XqcC35JcTznWZARMW2QgjQMy69eVstypOIiFwU45iXumxYjnBh7KVUN3IkR55oNzcJGaQ0CGw5pL9_Ol-H9zvhRmDxWh4KaHUDVT_R8hGXqci4u9EjMbz00Tm5erQaYKwsZTMYixGr-e2a-eqrcX0g_FDU03VMXi1tD-lYAgrAoll1TjxJtrg6HUmcjWjJAxg96m2VstF61VMWLedwzXtIEJuMrhjJfyl8i7kZh7FDIbSpW4TZg5p6pNog"/><span class="font-headline-md text-headline-md text-primary tracking-tight">K-TechRank</span></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[24px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-all" data-path="profile-my" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk1Z6h9w0K2kZXqG3BE9M-Cw22YfkuJkDH1PEyL1t968bbeCx_nOHNmtvSrpPWF_sHy__TsiNXDSYzi95gG1yms6RJmkxlOSBq6bCKNC24dIOPOBWch34j4N9oeggKjA_SIlW9u616yTeIs8c7AK7B63vmLD9Clyla-J7WXX_hTJKGTe_Z8cHPuJ8deMz1F-XcWw5EV2YGW7wK_C8P3lRBwrLtoT3H37WB5ipPEr-fBu9xerjcUFrYwQ"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<!-- 1. Profile Summary Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Close up professional portrait of a Korean male tech researcher with modern spectacles and navy knitwear, confident and friendly expression, warm studio lighting with cool azure accents in high definition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDemdHzGi_CWyTuzISq9IUcBNyOyXn2lEfZflrpFj69S8k7VDM8GKyrHb_qfrsSzsJ1plvXLODatsh5OLC3YWPSgT77vZn09FRbz7UgK0JK9jL8LHH-iMTHiv9LcFeBJ_JkuX57QBUPiS-v3j6rzqK5RLladzcHlsX5M-3xWY9d-lozT7ssN8Fu4_oNNED4pn0OekMuhD0D0xRBp9fcks52kJ7hfvSi3CNM2V8Yzlcj0PHZ0qK54vPVYg"/>
+<span class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary w-5 h-5 rounded-full flex items-center justify-center shadow-sm" title="Verified Creator">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-md text-headline-md text-on-surface truncate">동준상 (NexPlatform)</h1>
+</div>
+<p class="font-label-numeric text-label-numeric text-outline">@dong_creator</p>
+<span class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Verified Creator
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="프로필 편집" class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center active:scale-95 transition-all" id="editProfileBtn">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="계정 설정" class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+</div>
+</div>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      바이브코딩 실무 연구원 &amp; K-TechRank 시드 큐레이터. 생성형 AI 에이전트 및 LLM 오케스트레이션 인사이트를 공유합니다.
+    </p>
+<!-- Quick Meta Chips -->
+<div class="mt-3 pt-3 flex flex-wrap gap-2 bg-surface-container-low/50 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">terminal</span>
+<span>바이브코딩 실무</span>
+</div>
+<span class="text-outline-variant font-label-md text-label-md">•</span>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">hub</span>
+<span>LLM 아키텍처</span>
+</div>
+<span class="text-outline-variant font-label-md text-label-md">•</span>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>가입 328일차</span>
+</div>
+</div>
+</section>
+<!-- 2. Registered Channel Quick Card -->
+<section class="bg-primary text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-secondary/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]" style="font-variation-settings: 'FILL' 1;">live_tv</span>
+<span class="font-label-md text-label-md text-primary-fixed uppercase tracking-wider">연결된 채널 분석</span>
+</div>
+<span class="bg-primary-container text-on-tertiary-container text-label-numeric font-label-numeric px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+        LIVE SYNC
+      </span>
+</div>
+<div class="mt-3 flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-11 h-11 rounded-lg object-cover bg-primary-container" data-alt="Geometric futuristic logo for an artificial intelligence laboratory with glowing blue neon circuits on dark backdrop, sleek minimalist emblem icon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArFyIu-udxSS21-0WIRSmFQYYRlTayhOaA2SG0Ts8xcZ_EIT8IO0sBjETvYxnBAQws0WH759NMt0lOoRkdOztGMcdGDhk6E89GpLUo7sPVLlFGxTiiWqjd94rC7eIXphp6SDVUQxuA84gBbtMn79oMoWhPNokdkmDThY_v3qgDMmDTMwQh3xd_BAqlfTgSAVVwDLyB0EwqloIRPacJEqvRf2ut94ToNRcY3HzcACAAPwRCu5AtGzy9qg"/>
+<div class="min-w-0">
+<h2 class="font-title-md text-title-md text-on-primary truncate">넥스트플랫폼 AI 랩</h2>
+<p class="font-label-numeric text-label-numeric text-on-primary-container">@nextplatform_ai</p>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-stat-display text-stat-display text-on-primary tracking-tight">14위</span>
+<span class="flex items-center justify-end text-tertiary-fixed-dim font-label-numeric text-label-numeric">
+<span class="material-symbols-outlined text-[14px]">arrow_drop_up</span>
+          전주 대비 6▲
+        </span>
+</div>
+</div>
+<!-- Metric Counters Grid -->
+<div class="mt-4 grid grid-cols-3 gap-2 bg-primary-container/80 rounded-lg p-2.5">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-primary-container">주간 성장률</span>
+<span class="font-label-numeric text-label-numeric text-tertiary-fixed-dim mt-0.5 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +16.2%
+        </span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-primary-container">구독자</span>
+<span class="font-label-numeric text-label-numeric text-on-primary mt-0.5">2.41만 명</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-primary-container">누적 조회수</span>
+<span class="font-label-numeric text-label-numeric text-on-primary mt-0.5">48.2만 회</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+<span>AI 개발 카테고리 상위 1.8% 진입</span>
+</div>
+<button class="font-label-md text-label-md text-secondary-fixed-dim hover:text-on-primary flex items-center gap-0.5 transition-colors">
+<span>세부 통계</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- 3. My Stats & Achievement Badges Grid -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<h2 class="font-title-md text-title-md text-on-surface">성취 뱃지 &amp; 마일스톤</h2>
+</div>
+<span class="font-label-numeric text-label-numeric text-secondary bg-secondary-fixed px-2 py-0.5 rounded-full">4 / 5 달성</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Badge 1: Top 20 클럽 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-md text-title-md text-on-surface">Top 20 클럽</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">주간 랭킹 상위 20위 도달</p>
+<span class="inline-block mt-2 font-label-numeric text-label-numeric text-secondary font-semibold">2024.10.14 획득</span>
+</div>
+</div>
+<!-- Badge 2: 폭풍 성장러 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-md text-title-md text-on-surface">폭풍 성장러</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">주간 성장률 +15% 초과</p>
+<span class="inline-block mt-2 font-label-numeric text-label-numeric text-secondary font-semibold">2024.10.21 획득</span>
+</div>
+</div>
+<!-- Badge 3: 꾸준한 크리에이터 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">track_changes</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-md text-title-md text-on-surface">꾸준한 크리에이터</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">최근 30일 내 12회 업로드</p>
+<span class="inline-block mt-2 font-label-numeric text-label-numeric text-secondary font-semibold">12 / 12 완료</span>
+</div>
+</div>
+<!-- Badge 4: 트렌드 리서처 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">travel_explore</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-3">
+<h3 class="font-title-md text-title-md text-on-surface">트렌드 리서처</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">7일 연속 랭킹 보드 열람</p>
+<span class="inline-block mt-2 font-label-numeric text-label-numeric text-secondary font-semibold">연속 스트릭 달성</span>
+</div>
+</div>
+<!-- Badge 5: Locked TOP 10 마스터 (Full width in 2-col) -->
+<div class="col-span-2 bg-surface-container-low rounded-xl p-3 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface">TOP 10 마스터</h3>
+<span class="font-label-numeric text-label-numeric px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">도전 중</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">종합 랭킹 10위 이내 1회 이상 진입</p>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric font-bold text-secondary">72%</span>
+</div>
+<div class="mt-3 w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 72%"></div>
+</div>
+<div class="mt-1.5 flex justify-between font-label-numeric text-label-numeric text-outline">
+<span>현재 14위</span>
+<span>목표: 10위 (4계단 남음)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Saved Watchlist & Bookmarked Channels -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmarks</span>
+<h2 class="font-title-md text-title-md text-on-surface">관심 크리에이터 워치리스트</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center" data-path="channel-explore" href="#">
+<span>전체보기 (3)</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="space-y-2">
+<!-- Creator 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex items-center justify-between active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container" data-alt="Portrait of an influential tech YouTuber in casual black hoodie with futuristic studio microphone, softly blurred coding monitors behind." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBguJwHqDgBFAmKsbXdqoWe7Wn4ht3sgyDUKyP_EHiTQAE-GPQRU3oPz1Hiaclw0dnIVsKJselCg7KyXZTM3WK1l_6mUHrw_HtL-lKGpMz4-eeRj9e7tRq71_XDOo4kUeVpLz4wUNPc39R9Vpb-gtsM10DUqROIuAc2l-CbeVmn5PogdSJLROP-lasLi4kEMeaHrsOSewaBUmYxzob-DOCfoBl9MJ6ttGHNI2nQdkWiovb8klCqgnTTpg"/>
+<span class="absolute -top-1 -left-1 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">테크몽 실무연구소</h3>
+<div class="flex items-center gap-1.5 font-label-numeric text-label-numeric text-outline">
+<span>구독자 38.5만</span>
+<span>•</span>
+<span class="text-tertiary-fixed-dim">AI 생산성</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric text-secondary font-bold block">1위 유지</span>
+<span class="font-label-numeric text-label-numeric text-outline">변동 없음</span>
+</div>
+<button aria-label="알림 설정 켜짐" class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- Creator 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex items-center justify-between active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container" data-alt="Young energetic Korean female developer smiling, presenting a laptop with colorful Python and PyTorch terminal code, bright minimal office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrVewq4sE42ZXldXZGVqOjwe8HgWm_t8t-94uMYz0rlkJ8Nl6-c0kztU89ERfHMGZiEqth4NmvLAx9nwymD3dSo90-YoEXndQ5XNxDDQczHG0HKGfXwG3nVzS9HLsaJZPhxixvrB0OcC374WV-fj2X4EqXi3mTJ8cCeU9V0yhRcSyfTg7xWWioJYyNuzFDXBI2PC-_eGj43gL4-uoX9HVIOJ-A_FEmcp288i5gsEIG_4_l4fEslX4s3g"/>
+<span class="absolute -top-1 -left-1 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric w-4 h-4 rounded-full flex items-center justify-center font-bold">4</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">지민의 바이브코딩</h3>
+<div class="flex items-center gap-1.5 font-label-numeric text-label-numeric text-outline">
+<span>구독자 11.2만</span>
+<span>•</span>
+<span class="text-secondary">바이브코딩</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric text-secondary font-bold block">4위</span>
+<span class="font-label-numeric text-label-numeric text-tertiary-fixed-dim">▲ 2단계</span>
+</div>
+<button aria-label="알림 설정 켜짐" class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- Creator 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex items-center justify-between active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container" data-alt="Senior software architect speaking at an AI symposium, glasses, dark charcoal blazer, stage lighting in deep navy and cyan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMfJRq6xipGYAjPG8dJKnf7fFI6jOAIkrK8qWvV-cpD-ULMlfCs0Bh8g_a-vU7MjDErhtHIbLj3f_oPuHai_LhCudz97ZzN6zLLmIFdQa3UXWhW1qKeJUdpP8DmBu1IqMKcDxFKMzQQSngdlAgb52aBT0RrWWl5gpGVqa_cKF5TK-VC0f9Qa4UErTUyfrQKWiqRttDNoamx-wCrtqY9IF6k2K3KNdBbqP9nwYOyfrTwwG0QmIIwuVxVw"/>
+<span class="absolute -top-1 -left-1 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric w-4 h-4 rounded-full flex items-center justify-center font-bold">8</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">코드브릿지 아키텍트</h3>
+<div class="flex items-center gap-1.5 font-label-numeric text-label-numeric text-outline">
+<span>구독자 8.9만</span>
+<span>•</span>
+<span class="text-secondary">LLM 프레임워크</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric text-outline font-bold block">8위</span>
+<span class="font-label-numeric text-label-numeric text-error">▼ 1단계</span>
+</div>
+<button aria-label="알림 설정 켜짐" class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Newsletter & Pro Subscription Status Card -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">mark_email_read</span>
+<h2 class="font-title-md text-title-md text-on-surface">구독 &amp; 인텔리전스 플랜</h2>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md px-2.5 py-0.5 rounded-full font-semibold">
+        PRO MEMBER
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-3">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">주간 AI 트렌드 리포트 Pro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">매주 월요일 08:00 심층 데이터 브리프 자동 발송</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between font-label-numeric text-label-numeric text-outline bg-surface-container-low/60 rounded px-2.5 py-1.5">
+<span>다음 호 발송 예정</span>
+<span class="text-secondary font-semibold">2024.11.04 (월) 08:00</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-md text-title-md flex items-center justify-center gap-1 active:scale-98 transition-all">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>플랜 관리</span>
+</button>
+<button class="h-10 rounded-lg bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center gap-1 active:scale-98 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+<span>연동 계정 관리</span>
+</button>
+</div>
+</section>
+<!-- Interactive Toast / Micro-Action Feedback -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-body-sm text-body-sm shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="actionToast">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span id="toastMsg">프로필 편집 모드로 이동합니다.</span>
+</div>
+</div>
+<script>
+  (function() {
+    const editBtn = document.getElementById('editProfileBtn');
+    const toast = document.getElementById('actionToast');
+    const toastMsg = document.getElementById('toastMsg');
+    let timer = null;
+
+    function showToast(message) {
+      if (!toast) return;
+      if (toastMsg) toastMsg.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2200);
+    }
+
+    if (editBtn) {
+      editBtn.addEventListener('click', () => {
+        showToast('프로필 편집 모드를 준비 중입니다.');
+      });
+    }
+
+    // Toggle notification icon states on watchlist buttons
+    const notifButtons = document.querySelectorAll('button[aria-label^="알림 설정"]');
+    notifButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+          if (isFilled) {
+            icon.style.fontVariationSettings = "'FILL' 0";
+            icon.textContent = 'notifications_off';
+            btn.classList.add('text-outline');
+            btn.classList.remove('text-secondary');
+            showToast('알림을 일시 해제했습니다.');
+          } else {
+            icon.style.fontVariationSettings = "'FILL' 1";
+            icon.textContent = 'notifications_active';
+            btn.classList.remove('text-outline');
+            btn.classList.add('text-secondary');
+            showToast('실시간 순위 변동 알림이 활성화되었습니다.');
+          }
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-secondary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-11 py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">trending_up</span><span class="font-label-md text-label-md mt-0.5">홈</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ranking-board" href="#"><span class="material-symbols-outlined text-[24px]">leaderboard</span><span class="font-label-md text-label-md mt-0.5">랭킹</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="channel-explore" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-md text-label-md mt-0.5">탐색</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights-newsletter" href="#"><span class="material-symbols-outlined text-[24px]">article</span><span class="font-label-md text-label-md mt-0.5">인사이트</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-11 py-1 transition-colors text-secondary font-semibold" data-path="profile-my" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md text-label-md mt-0.5">MY</span></a></div></nav></body></html>

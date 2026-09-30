@@ -1,0 +1,12 @@
+[
+  { "handle": "@jocoding", "subCategory": "llm" },
+  { "handle": "@teddynote", "subCategory": "llm" },
+  { "handle": "@dream-coding", "subCategory": "vibe" },
+  { "handle": "@codingapple", "subCategory": "vibe" },
+  { "handle": "@todaycode", "subCategory": "ml" },
+  { "handle": "@nomadcoders", "subCategory": "career" },
+  { "handle": "@yalco-coding", "subCategory": "career" },
+  { "handle": "@sucoding", "subCategory": "career" },
+  { "handle": "@kakaotech", "subCategory": "cloud" },
+  { "handle": "@captainpangyo", "subCategory": "cloud" }
+]
